@@ -3,7 +3,6 @@ with open("input3.txt") as inputfile:
 	inputlist1 = blabla[0].split(",")
 	inputlist2 = blabla[1].split(",")
 
-
 def intersections(inputlist1, inputlist2):
 	input1 = set()
 	input2 = set()
@@ -74,10 +73,7 @@ def intersections(inputlist1, inputlist2):
 				length2[(pos[0]-i-1, pos[1])] = steps2
 			pos[0] = pos[0] - int(direction[1:])
 
-
 	intersections = input1.intersection(input2)
-
-	
 	distances = set()
 	wiredistances = set()
 	for item in intersections:
